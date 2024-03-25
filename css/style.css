@@ -1,0 +1,465 @@
+/* ---------- Start global --------- */
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 200%;
+    color: #ff305b;
+    /* background-color: red; */
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;    
+    color: white;
+}
+
+button{
+    border-radius: 4px;
+    border: 2px solid #ff305b;
+    background-color: #ff305b;
+    color: white;
+    padding: 10 25;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: Roboto, sans-serif;
+    margin-top: 10px;
+    transition: .9s;
+}
+
+button:hover{
+    background-color: #EC2403;
+    cursor: pointer;
+    border: 2px solid #EC2403;
+}
+
+label.title{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 30px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+label.title::before{
+    content: "";
+    position: absolute;
+    top: 105;
+    left: 47%;
+    padding: 5 10px;
+    width: 70px;
+    border-top: #ff305b 1px solid;
+    border-bottom: #ff305b 1px solid;
+}
+
+label.title::after{
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 45%;
+    width: 140;
+    padding: 2 5px;
+    border-top: #ff305b 1px solid;
+}
+/* ---------- End global --------- */
+
+/* ---------- Start nav --------- */
+.nav{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+.nav .link{
+    float: right;
+    margin-right: 60px;
+}
+
+.link ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link li{
+    float:  left;
+    padding-left: 20px;
+}
+
+.link a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .5s;
+}
+.link a:hover, .active{
+    color: #ff305b;
+    font-size: medium;
+}
+
+.nav .logo{
+    margin-left: 60px;
+    float: left;
+}
+
+.logo a{
+    color: #ff305b;
+    font-size: 22px;
+    transition: all .5s;
+    text-decoration: none;
+}   
+/* ---------- End nav --------- */
+
+/* ----------------- Start header ------------- */
+
+
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 25%;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.header .cover-layer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: .4;
+}
+
+.header .text{
+    padding-top: 19%;
+    margin:auto;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+}
+
+.text span{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 70px;
+    margin: 10px;
+}
+
+.text h2{
+    color: #ff305b;
+    font-weight: 900;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
+
+.text p{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px;
+    width: fit-content;
+    border-right: 1px solid white;
+}
+
+
+/* ----------------- End header ------------- */
+
+
+/* ----------------- Start welcome ------------- */
+.welcome{
+    position: relative;
+    margin: 100px;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.welcome .image-cover{
+    position: relative;
+    float: left;
+    border: 8px solid #555555;
+    border-radius: 5px;
+    width: 26%;
+    height: 430px;
+    top: 0;
+    left: 0;
+}
+
+.welcome .image-cover .image{ 
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    overflow: auto;
+    border-radius: 8px;
+}
+
+.welcome .description{
+    float: left;
+    position: relative;
+    width: 40%;
+    margin-left: 200px;
+}
+
+.welcome .description h2{
+    border-left: 4px solid  red ;
+    margin: 0px;
+    padding: 3 0;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Source Sans Pro"-660;
+    font-size: 34px;
+    line-height: 22px;
+    color: #333333;
+    padding-left: 8px;
+}
+
+.welcome .description p{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+    padding: 0;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #555555;
+}
+
+.welcome .contact-info{
+    position: relative;
+    left: 0;
+    padding-left: 0px;
+}
+
+.contact-info .left{
+    float: left;
+    position: relative;
+    text-align: left;
+}
+
+.contact-info .right{
+    position: relative;
+    margin-left: 200px;
+}
+
+.contact-info ul{
+    list-style: none;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info strong{
+    color: #333333;
+    font-size: 16px;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.contact-info label{
+    font-family: Roboto, sans-serif;
+    color: #555555;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+}
+.contact-info a{
+    font-family: Roboto, sans-serif;
+    color: #555555;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+}
+
+.contact-info .hire{
+    margin-left: 20px;
+}
+/* ----------------- End welcome ------------- */
+
+/* ----------------- Start Ouer Services ------------- */
+
+.our-services{
+    position: relative;
+    margin-top: 100px;
+    width: auto;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 50px;
+}
+
+.our-services .item{
+    float: left;
+    overflow: auto;
+    width: 25%;
+    padding: 20px;
+    margin-top: 70px;
+    transition: .5s;
+}
+
+.our-services .item:hover{
+    background-color: white;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.our-services .item img{
+    transition: .5s;
+}
+
+.our-services .item:hover img{
+    transform: scale(1.9);
+}
+
+
+.our-services .item p{  
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+}
+
+.our-services .item h2{  
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 26px;
+    color: #555555;
+}
+/* ----------------- End Ouer Services ------------- */
+
+/* ----------------- Start Ouer Portfolio ------------- */
+.our-portfolio{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px;
+    display: block;
+}
+
+.our-portfolio .our-portfolio-header {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 60;
+    margin-bottom: 60;
+    padding: 20px;
+}
+
+.our-portfolio .our-portfolio-header a{
+    float: left;
+    color: #333;
+    text-transform: uppercase;
+    transition: .5s;
+    
+}
+.our-portfolio-header a.active, .our-portfolio-header a:hover{
+    float: left;
+    color: #ff305b;
+    text-transform: uppercase;
+}
+
+.our-portfolio .image{
+    width: 30%;
+    display: inline-block;
+    margin: 16px;
+
+}
+.our-portfolio .image img{
+    width: 100%;
+    display: inline-block;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.1);
+
+}
+/* ----------------- End Ouer Portfolio ------------- */
+
+
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    display: block;
+    justify-content: center;
+    background-color: #333333;
+    padding: 50px 0px 10px 0px;
+    text-align: center;
+}
+
+.footer .social-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon img{
+    width: 30px;
+    border: solid 1px #333333;
+    border-radius: 50%;
+    margin: 0px 5px;
+    transition: .5s;
+}
+.social-icon img:hover{
+    background-color: #ff305b;
+    border: solid 1px #ff305b;
+}
+
+.footer p{
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer a{
+    color: #ff305b;
+    transition: .5s;
+}
+
+.footer a:hover{
+    color: #ff305b;
+    text-decoration: underline;
+}
