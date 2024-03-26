@@ -84,6 +84,11 @@ label.title::after{
     padding: 2 5px;
     border-top: #ff305b 1px solid;
 }
+
+[class^=icofont-] {
+    font-size: 26px;
+    font-weight: 500;
+}
 /* ---------- End global --------- */
 
 /* ---------- Start nav --------- */
@@ -310,10 +315,10 @@ label.title::after{
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-.colored-block .item img{
+.colored-block .item .icofont{
     transition: .5s;
 }
-.colored-block .item:hover img{
+.colored-block .item:hover .icofont{
     transform: scale(1.9);
 }
 .colored-block .item p{  
