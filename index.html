@@ -1,6 +1,10 @@
 <html>
     <head>
         <title>Fokir</title>
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+        <link rel="stylesheet" href="css/rating-bar.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -82,7 +86,7 @@
             </div>
         </div>
 
-        <div class="our-services">
+        <div class="colored-block">
             <div >
                 <label class="title">Our Services</label>
             </div>
@@ -120,12 +124,12 @@
             </div>
         </div>
 
-        <div class="our-portfolio">
+        <div class="block">
             <div>
                 <label class="title">Our Portfolio</label>
             </div>
 
-            <div class="our-portfolio-header">
+            <div class="header">
                 <a class="link active" href="#">All</a>
                 <a class="link" href="#">graphic</a>
                 <a class="link" href="#">web designer</a>
@@ -165,25 +169,143 @@
                 </a>
             </div>
         </div>
+        
+        <div class="colored-block">
+            <div class="statistic-item">
+                <div class="container">
+                    <i class="fa fa-users" style="font-size: 26px;"></i>
+                    <h2>70</h2>
+                    <label for="">Team members</label>
+                </div>
+
+                <div class="container">
+                    <i class="far fa-copy"  style="font-size: 26px;"></i>
+                    <h2>124</h2>
+                    <label for="">Complete Projects</label>
+                </div>
+
+                <div class="container">
+                    <i class="fas fa-cloud-download-alt"  style="font-size: 26px;"></i>
+                    <h2>360</h2>
+                    <label for="">Files Downloaded</label>
+                </div>
+
+                <div class="container">
+                    <i class="fas fa-coffee" style="font-size: 26px;"></i>
+                    <h2>420</h2>
+                    <label for="">Lines Of Code</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div>
+                <label for="title" class="title">client's feedback</label>
+            </div>
+            <div class="feadback-container">
+                <div class="img-bk">
+                    <img src="img/feedback.jpg" alt="">
+                </div>
+                <div class="swek">
+                        
+                </div>
+                <div class="feadback-text">
+                    <h2 for="customer-name" class="customer-name">alexander</h2>
+                    <label for=""><i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <a href="#">united</a>
+                    </label>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, fugit sint sit molestias ipsam repellendus iure ratione dolorem quis voluptas consequatur quas incidunt aliquam provident aspernatur nemo perspiciatis maiores! A.
+                    </p>
+                    <div class="rating-bar">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="colored-block">
+            <div class="our-blog-header">
+                <label for="" class="title">Our Blog</label>
+            </div>
+            <div class="our-blog-container">
+                <div class="our-blog-item">
+                    <a href="#">
+                        <img src="img/blog/12.jpg" alt="blog image 12">
+                    </a>
+                    <div class="blog-intro">
+                        <h2 for="date">23 November, 2015</h2>
+                        <a class="blog-title" href="#">web design blog post</a> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="#">read more→</a>
+                    </div>
+                </div>
+
+                <div class="our-blog-item">
+                    <iframe width="400" height="203" src="https://www.youtube.com/embed/uVju5--RqtY" title="Envato - Bringing Ideas to Life" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="blog-intro">
+                        <h2 for="date">20 April, 2018</h2>
+                        <a class="blog-title" href="#">web design blog post</a> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="#">read more→</a>
+                    </div>
+                </div>
+
+                <div class="our-blog-item">
+                    <a href="#">
+                        <img src="img/blog/32.jpg" alt="blog image 32">
+                    </a>
+                    <div class="blog-intro">
+                        <h2 for="date">17 May, 2017</h2>
+                        <a class="blog-title" href="#">Full Width Blog Post</a> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                            <a href="#">read more→</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 
         <div class="contact-form">
-            <input type="text" placeholder="name">
-            <label class="error-message" for="error">Error message here</label>
+            <div class="title">
+                <label class="title">Contact Us</label>
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <div class="row">
+                <textarea rows="7" type="text" placeholder="Message Fro Me"></textarea>
+            </div>
+            <div class="row">
+                <button>Send Message</button>
+            </div>
         </div>
 
         <div class="footer">
             <div class="social-icon">
                 <a href="#">
-                    <img src="img/icons/linkedin.png" alt="">
+                    <i class="fab fa-facebook-f" ></i>
                 </a>
                 <a href="#">
-                    <img src="img/icons/facebook.png" alt="">
+                    <i class="fab fa-twitter" ></i>
                 </a>
                 <a href="#">
-                    <img src="img/icons/google.png" alt="">
+                    <i class="fab fa-google" ></i>
                 </a>
-                <a href="#" class="social-icon1">
-                    <img src="img/icons/twitter.png" alt="">
+                <a href="#">
+                    <i class="fab fa-github" ></i>
                 </a>
             </div>
             <p class="copy-reght">
@@ -191,6 +313,6 @@
             </p>
         </div>
 
-        
+        <script src="fontawesome-free-5.15.4-web/js/all.min.js"/>
     </body>
 </html>

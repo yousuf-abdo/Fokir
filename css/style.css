@@ -1,5 +1,4 @@
 /* ---------- Start global --------- */
-
 body{
     padding: 0;
     margin: 0;
@@ -7,19 +6,37 @@ body{
     color: #ff305b;
     /* background-color: red; */
 }
-
+.colored-block{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+}
+.block{
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+}
 *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
 a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;    
     color: white;
 }
-
 button{
     border-radius: 4px;
     border: 2px solid #ff305b;
@@ -33,13 +50,11 @@ button{
     margin-top: 10px;
     transition: .9s;
 }
-
 button:hover{
     background-color: #EC2403;
     cursor: pointer;
     border: 2px solid #EC2403;
 }
-
 label.title{
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 800;
@@ -47,24 +62,23 @@ label.title{
     font-size: 40px;
     line-height: 30px;
     color: #333333;
-    margin-top: 20px;
+    margin-top: 0px;
+    text-transform: capitalize;
 }
-
 label.title::before{
     content: "";
     position: absolute;
-    top: 105;
+    top: 100;
     left: 47%;
     padding: 5 10px;
     width: 70px;
     border-top: #ff305b 1px solid;
     border-bottom: #ff305b 1px solid;
 }
-
 label.title::after{
     content: "";
     position: absolute;
-    top: 110px;
+    top: 105px;
     left: 45%;
     width: 140;
     padding: 2 5px;
@@ -83,23 +97,19 @@ label.title::after{
     box-sizing: border-box;
     background-color: #333;
 }
-
 .nav .link{
     float: right;
     margin-right: 60px;
 }
-
 .link ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .link li{
     float:  left;
     padding-left: 20px;
 }
-
 .link a{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -110,12 +120,10 @@ label.title::after{
     color: #ff305b;
     font-size: medium;
 }
-
 .nav .logo{
     margin-left: 60px;
     float: left;
 }
-
 .logo a{
     color: #ff305b;
     font-size: 22px;
@@ -125,8 +133,6 @@ label.title::after{
 /* ---------- End nav --------- */
 
 /* ----------------- Start header ------------- */
-
-
 .header{
     position: relative;
     top: 0;
@@ -136,7 +142,6 @@ label.title::after{
     text-align: center;
     padding: 25%;
 }
-
 .header img{
     width: 100%;
     height: 100%;
@@ -145,7 +150,6 @@ label.title::after{
     z-index: 1;
     position: absolute;
 }
-
 .header .cover-layer{
     background-color: black;
     position: absolute;
@@ -157,7 +161,6 @@ label.title::after{
     z-index: 1;
     opacity: .4;
 }
-
 .header .text{
     padding-top: 19%;
     margin:auto;
@@ -169,7 +172,6 @@ label.title::after{
     bottom: 0;
     width: fit-content;
 }
-
 .text span{
     color: white;
     font-weight: 700;
@@ -177,7 +179,6 @@ label.title::after{
     padding: 70px;
     margin: 10px;
 }
-
 .text h2{
     color: #ff305b;
     font-weight: 900;
@@ -185,7 +186,6 @@ label.title::after{
     padding: 0;
     margin: 0;
 }
-
 .text p{
     color: white;
     font-size: 20px;
@@ -194,10 +194,7 @@ label.title::after{
     width: fit-content;
     border-right: 1px solid white;
 }
-
-
 /* ----------------- End header ------------- */
-
 
 /* ----------------- Start welcome ------------- */
 .welcome{
@@ -206,7 +203,6 @@ label.title::after{
     width: auto;
     box-sizing: border-box;
 }
-
 .welcome .image-cover{
     position: relative;
     float: left;
@@ -217,7 +213,6 @@ label.title::after{
     top: 0;
     left: 0;
 }
-
 .welcome .image-cover .image{ 
     position: absolute;
     left: 16px;
@@ -225,14 +220,12 @@ label.title::after{
     overflow: auto;
     border-radius: 8px;
 }
-
 .welcome .description{
     float: left;
     position: relative;
     width: 40%;
     margin-left: 200px;
 }
-
 .welcome .description h2{
     border-left: 4px solid  red ;
     margin: 0px;
@@ -245,7 +238,6 @@ label.title::after{
     color: #333333;
     padding-left: 8px;
 }
-
 .welcome .description p{
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -257,38 +249,32 @@ label.title::after{
     padding-bottom: 30px;
     border-bottom: 1px dashed #555555;
 }
-
 .welcome .contact-info{
     position: relative;
     left: 0;
     padding-left: 0px;
 }
-
 .contact-info .left{
     float: left;
     position: relative;
     text-align: left;
 }
-
 .contact-info .right{
     position: relative;
     margin-left: 200px;
 }
-
 .contact-info ul{
     list-style: none;
     line-height: 40px;
     margin: 0;
     padding: 0;
 }
-
 .contact-info strong{
     color: #333333;
     font-size: 16px;
     font-style: normal;
     font-family: 'Roboto', sans-serif;;
 }
-
 .contact-info label{
     font-family: Roboto, sans-serif;
     color: #555555;
@@ -305,26 +291,13 @@ label.title::after{
     font-style: normal;
     line-height: 16px;
 }
-
 .contact-info .hire{
     margin-left: 20px;
 }
 /* ----------------- End welcome ------------- */
 
 /* ----------------- Start Ouer Services ------------- */
-
-.our-services{
-    position: relative;
-    margin-top: 100px;
-    width: auto;
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 50px;
-}
-
-.our-services .item{
+.colored-block .item{
     float: left;
     overflow: auto;
     width: 25%;
@@ -332,23 +305,18 @@ label.title::after{
     margin-top: 70px;
     transition: .5s;
 }
-
-.our-services .item:hover{
+.colored-block .item:hover{
     background-color: white;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
-
-.our-services .item img{
+.colored-block .item img{
     transition: .5s;
 }
-
-.our-services .item:hover img{
+.colored-block .item:hover img{
     transform: scale(1.9);
 }
-
-
-.our-services .item p{  
+.colored-block .item p{  
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -356,31 +324,20 @@ label.title::after{
     line-height: 25px;
     color: #555555;
 }
-
-.our-services .item h2{  
+.colored-block .item h2{  
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 24px;
+    text-transform: uppercase;
     line-height: 26px;
     color: #555555;
 }
-/* ----------------- End Ouer Services ------------- */
+/* ----------------- End Our Services ------------- */
 
-/* ----------------- Start Ouer Portfolio ------------- */
-.our-portfolio{
-    position: relative;
-    margin-top: 100px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 50px;
-    display: block;
-}
-
-.our-portfolio .our-portfolio-header {
+/* ----------------- Start Our Portfolio ------------- */
+.block .header {
     width: 40%;
-    height: 40px;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -388,59 +345,253 @@ label.title::after{
     margin-bottom: 60;
     padding: 20px;
 }
-
-.our-portfolio .our-portfolio-header a{
+.block .header a{
     float: left;
     color: #333;
     text-transform: uppercase;
     transition: .5s;
     
 }
-.our-portfolio-header a.active, .our-portfolio-header a:hover{
+.header a.active, .header a:hover{
     float: left;
     color: #ff305b;
     text-transform: uppercase;
 }
-
-.our-portfolio .image{
+.block .image{
     width: 30%;
     display: inline-block;
     margin: 16px;
 
 }
-.our-portfolio .image img{
+.block .image img{
     width: 100%;
     display: inline-block;
     box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.1);
 
 }
 /* ----------------- End Ouer Portfolio ------------- */
+/* ----------------- Start Statistic ------------- */
+.colored-block .statistic-item{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+.statistic-item .container{
+    width: 25%;
+    margin: 25px 0;
+}
+.statistic-item .container img{
+    width: 40px;
+}
+.statistic-item .container h2{
+font-family: "Source Sans Pro", sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 26;
+color: #333333;
+padding: 0;
+margin: 15;
+}
+.statistic-item .container label{
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16;
+    color: #555555;
+}
+/* ----------------- End Statistic ------------- */
+
+/* ----------------- Start client's-feadback ------------- */
+.block .feadback-container{
+    background-color: #F1F1F1;
+    width: 60%;
+    margin: auto;
+    height: 280px;
+    margin-top: 80px;
+    color: #777777;
+    z-index: 1;
+    border-radius: 8px;
+}
+.block .feadback-container img{
+    border-radius: 50%;
+    float: left;
+    position: absolute;
+    left: 350;
+    top: 220;
+    z-index: 2;
+}
+.block .feadback-container .feadback-text{
+    float: left;
+    position: absolute;
+    left: 500;
+    top: 170;
+    text-align: left;
+    width: 45%;
+    padding: 0 18px;
+}
+.block .feadback-container .swek{
+    width: 125px;
+    height: 280px;
+    background-color: red;
+    position: relative;
+    transform: skewY(360deg);
+}
+
+.block .feadback-text .customer-name{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+    text-transform: capitalize;
+    /* margin: 0; */
+    padding: 0;
+}
+.block .feadback-text a{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    text-transform: capitalize;
+}
+i.fas.fa-map-marker-alt {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    text-transform: capitalize;
+}
+
+.block .feadback-text p{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: #555555;
+    line-height: 1.8;
+    text-transform: capitalize;
+    width: 85%;
+
+}
+/* ----------------- End client's-feadback ------------- */
+
+/* ----------------- Start Our-Blog ------------- */
+.colored-block .our-blog-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.colored-block .our-blog-item{
+    width: 100%;
+    padding: 0px;
+    margin: 50 20px;
+    text-align: left;
+    background-color: white;
+}
+.colored-block .our-blog-item img{
+    width: 100%;
+}
+.our-blog-item .blog-intro{
+    width: 100%;
+    text-align: left;
+    color: #333333;
+    padding: 16 20px 25px 20px;
+    margin: 0;
+}
+.our-blog-item .blog-intro a{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    color: #555555;
+    transition: .5s;
+    text-transform: uppercase;
+}
+.our-blog-item .blog-intro a:hover, .our-blog-item .blog-intro a.blog-title:hover{
+    color: #ff305b;
+}
+.our-blog-item .blog-intro a.blog-title{
+    font-size: 24px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    color: #555555;
+    font-style: normal;
+    text-transform: capitalize;
+    transition: .5s;
+}
+.our-blog-item .blog-intro h2{
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    color: #555555;
+}
+.our-blog-item .blog-intro h3{
+    font-size: 24px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    color: #555555;
+}
+.our-blog-item .blog-intro p{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555555;
+}
+/* ----------------- End Our-Blog ------------- */
 
 /* ----------------- Start Contact form ------------- */
-
 .contact-form{
-    width: 100%;
-    height: 200px;
-    /* background-color: red; */
-    padding: 80px;
     position: relative;
-    display: inline-flex;
+    margin-top: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    padding: 50px;
+}
+.contact-form .title{
+    display: flex;
     justify-content: center;
+    height: 70px;
+}
+.contact-form .row{
+    width: 60%;
+    height: auto;
     margin: auto;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
 }
-
-.contact-form input{
-   border: #ff305b 1px solid; 
-   border-radius: 5px;
+.contact-form input, .contact-form textarea{
+   border: #eeeced 1px solid; 
+   border-radius: 4px;
+   height: 40px;
+   width: 100%;
+   margin: 0 30px;
+   padding: 10px;
+   font-size: 14px;
+   box-shadow: 0 1px 10px rgba(218, 214, 214, 0.1);
 }
-.contact-form input:focus{
-    outline: #ff305b;
- }
-
+.contact-form textarea{
+    height: 150px;
+}
+.contact-form input:focus, textarea:focus{
+    outline: red;
+    border: red 1px solid; 
+}
+.contact-form button{
+    float: left;
+    margin: 0 30px;
+    text-transform: uppercase;
+}
+.contact-form button:hover{
+    cursor: not-allowed;
+}
 /* ----------------- End Contact form ------------- */
-
-
-
 
 /* ----------------- Start Footer ------------- */
 .footer{
@@ -450,26 +601,26 @@ label.title::after{
     display: block;
     justify-content: center;
     background-color: #333333;
-    padding: 50px 0px 10px 0px;
+    padding: 60px 0px 20px 0px;
     text-align: center;
+    margin: auto;
 }
-
 .footer .social-icon{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    color: white;
+    width: 150px;
+    margin: auto;
 }
-
-.social-icon img{
-    width: 30px;
-    border: solid 1px #333333;
-    border-radius: 50%;
-    margin: 0px 5px;
+.footer.social-icon a{
+    font-size: 26px;
+    margin: 0px 10px;
     transition: .5s;
-}
-.social-icon img:hover{
-    background-color: #ff305b;
-    border: solid 1px #ff305b;
+    padding: 20px;
+    color: white;
+}   
+.footer .social-icon a:hover{
+    color: #ff305b;
 }
 
 .footer p{
@@ -479,13 +630,11 @@ label.title::after{
     font-size: 16px;
     line-height: 25px;
 }
-
-.footer a{
+.footer .copy-reght a{
     color: #ff305b;
     transition: .5s;
 }
-
-.footer a:hover{
+.footer .copy-reght a:hover{
     color: #ff305b;
     text-decoration: underline;
 }
